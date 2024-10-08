@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            background: #2c3e50;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #1abc9c;
+        }
+        section {
+            background: #ffffff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        section img {
+            max-width: 200px; /* Aumentando a largura máxima da imagem */
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #35424a;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e2e2e2;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #35424a;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border 0.3s;
+        }
+        input:focus, textarea:focus {
+            border: 1px solid #2c3e50;
+        }
+        button {
+            padding: 10px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #1abc9c;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media (max-width: 600px) {
+            section {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            section img {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Portfólio</h1>
+</header>
+
+<nav>
+    <a href="#sobre">Sobre Mim</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre" class="fade-in">
+    <img src="c:\Users\aluno.EMBARQUEDIGITAL\Downloads\kkkkk.png.jpeg" alt="Foto de Luan Gabriel Rodrigues de Souza"> <!-- Caminho relativo -->
+    <div>
+        <h2>Sobre Mim</h2>
+        <p>Olá! Meu nome é Luan Gabriel Rodrigues de Souza, sou um estudante apaixonado por JavaScript. Tenho experiência em administração e meu objetivo é buscar novas tendências e melhores práticas no mercado.</p>
+        
+        <h3>Habilidades</h3>
+        <ul>
+            <li>Lógica de Programação</li>
+            <li>Metodologias Ágeis</li>
+            <li>Comunicação</li>
+        </ul>
+        
+        <h3>Informações</h3>
+        <table>
+            <tr>
+                <th>Habilidade</th>
+                <th>Nível</th>
+            </tr>
+            <tr>
+                <td>Lógica de Programação</td>
+                <td>Básica</td>
+            </tr>
+            <tr>
+                <td>Metodologias Ágeis</td>
+                <td>Básica</td>
+            </tr>
+            <tr>
+                <td>Domínio de Linguagens de Programação</td>
+                <td>Intermediário</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="projetos" class="fade-in">
+    <h2>Projetos</h2>
+    <ul>
+        <li>
+            <strong>Sistema de Cadastro de Usuários</strong>: Uma aplicação web onde os usuários podem se cadastrar, fazer login, editar perfis e visualizar a lista de todos os usuários.
+        </li>
+        <li>
+            <strong>Blog Pessoal</strong>: Uma plataforma de blog que permite aos usuários criar, editar e excluir postagens. Os visitantes podem ler e comentar.
+        </li>
+        <li>
+            <strong>Aplicativo de Monitoramento de Tarefas e Tempo</strong>: Uma aplicação que ajuda os usuários a gerenciar suas tarefas e o tempo gasto em cada uma.
+        </li>
+    </ul>
+</section>
+
+<section id="contato" class="fade-in">
+    <h2>Contato</h2>
+    <form>
+        <input type="text" name="nome" placeholder="Seu Nome" required>
+        <input type="email" name="email" placeholder="Seu Email" required>
+        <textarea name="mensagem" rows="4" placeholder="Sua Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+</body>
+</html>
